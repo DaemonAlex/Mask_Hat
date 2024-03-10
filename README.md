@@ -1,63 +1,43 @@
-## Script for GTA RP
+# QBCore Commands Resource
 
-You can use on vRP or ESX.
+## Overview
 
-This is a simple script executed only Fivem client
+This resource for QBCore FiveM servers adds a series of commands that players can use to interact with their character models in-game, including changing masks, hats, and performing emotes. Designed to integrate seamlessly with QBCore, it enhances roleplay and player interaction by providing quick access to common character customizations and actions.
 
+## Features
 
-* /mask 
+- **Mask Command**: Allows players to put on or take off masks with optional color variations.
+- **Hat Command**: Enables players to wear or remove hats, with support for color variations.
+- **Emote Command**: Grants players the ability to perform predefined emotes or animations.
 
-	* Use for put mask
+## Installation
 
-	* > /mask 35
+1. Download the latest version of the resource from the GitHub repository.
+2. Extract the downloaded ZIP file into your server's `resources` directory.
+3. Add the following line to your server's `server.cfg` file:
 
-	* and for remove mask, use
-	* > /mask
+- ensure qb-commands-resource
 
-	![Mask] (https://wiki.gtanet.work/images/c/cf/HeadFemale_35.jpg)
+  
+4. Restart your server or use the `refresh` and `ensure` commands in the server console to start using the resource.
 
+## Commands and Usage
 
+- **/mask [mask_id] [color]**: Changes the player's mask. `mask_id` and `color` are optional; omitting them removes the mask.
+- **/hat [hat_id] [color]**: Equips a hat on the player. `hat_id` and `color` are optional; not providing them will remove the hat.
+- **/e [emote_name]**: Performs an emote. Replace `[emote_name]` with the desired emote. Use without an argument to stop the current emote.
 
-* /hat
+## Reporting Issues
 
-	* Use for put hat
+If you encounter any bugs or have suggestions for improvements, please use the [Issues](https://github.com/YourGitHubUsername/qb-commands-resource/issues) section of this repository. Be sure to provide a detailed description of the issue, including steps to reproduce it, any error messages, and screenshots if applicable.
 
-	* > /hat 13
+## Contributing
 
-	* and for remove hat, use
-	* > /hat
+Contributions to the project are welcome! If you'd like to contribute, please fork the repository and submit a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
 
-	![Hat] (https://wiki.gtanet.work/images/3/3b/HatsMale_13.jpg)
+Ensure any contributions adhere to the QBCore coding standards and do not introduce compatibility issues.
 
-Masks and Hats having colors, also use /mask <mask_number> <color_number>
-> /mask 17 3
+## License
 
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-<br>
-## List of hats and masks
-
-[masks](https://wiki.gtanet.work/index.php?title=Masks)
-
-[hats](https://wiki.gtanet.work/index.php?title=Hats_Male)
-
-### Emotes
-
-This script having some emotes too.
-
-Use this for smoke
-
-> /e fumar
-
-_Translate emote in client.lua_
-
-
-Cancel emote
-> /e
-
-
-(fumar = smoke)
-
-<br>
-<br>
-
-Special thanks for ![ChristopherM](https://github.com/inferno-collection), for help me on script
