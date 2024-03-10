@@ -2,6 +2,8 @@
 
 ## Overview
 
+This resource is an update and port of the original Meta Masks script by dD5M, adapted for use with the QBCore framework and ox_inventory for enhanced mask management and functionality within FiveM.
+
 This resource for QBCore FiveM servers adds a series of commands that players can use to interact with their character models in-game, including changing masks, hats, and performing emotes. Designed to integrate seamlessly with QBCore, it enhances roleplay and player interaction by providing quick access to common character customizations and actions.
 
 ## Features
